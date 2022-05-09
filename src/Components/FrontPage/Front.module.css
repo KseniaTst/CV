@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+
+}
+.paper{
+height: 50%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-direction: row;*/
+}
+.text{
+    font-weight: bold;
+    margin-left: 10%;
+}
+.img{
+    width: 35%;
+}
