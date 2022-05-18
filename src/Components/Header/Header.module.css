@@ -1,0 +1,12 @@
+.button{
+    margin:17px;
+    box-sizing:border-box
+
+}
+.typogr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}

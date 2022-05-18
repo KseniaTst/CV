@@ -9,7 +9,7 @@ export const Front = () => {
                     Меня зовут Ксения<br/>
                     Я front-end разработчик
                 </div>
-                <div><img className={s.img} src={''}/></div>
+                <div><img className={s.img} src={''}/> img</div>
             </Paper>
         </div>
     )

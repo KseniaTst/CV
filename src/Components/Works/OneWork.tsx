@@ -7,7 +7,7 @@ export const OneWork=()=>{
             <div className={s.watch}>
                 <Button variant={'outlined'} color={'inherit'}>Watch</Button>
             </div>
-            <div className={s.descr}>
+            <div className={s.description}>
                 <p>Project Name</p>
                 <div>Description</div>
             </div>

@@ -15,9 +15,11 @@ height: 50%;
     /*flex-direction: row;*/
 }
 .text{
+    background-color: wheat;
     font-weight: bold;
     margin-left: 10%;
 }
 .img{
+    background-color: lightblue;
     width: 35%;
 }

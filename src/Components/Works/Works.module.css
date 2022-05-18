@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
+    background-color: wheat;
 }
 
 .paper {
-    height: 70%;
+    min-height: 70%;
     font-weight: bold;
     align-items: center;
     width: 70%;
@@ -17,19 +18,26 @@ display: flex;
     justify-content: space-between;
 }
 .oneWork{
-    margin: 30px;
+    background-color: burlywood ;
+    min-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .watch{
     background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 85px;
+    box-sizing: border-box;
+
 
 }
-.descr{
+.description{
+    background-color: darkcyan;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 30%;
+    height: 60%;
 }

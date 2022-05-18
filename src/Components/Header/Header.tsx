@@ -1,5 +1,5 @@
 import {AppBar, Button, createTheme, IconButton, ThemeProvider, Toolbar, Typography} from "@mui/material";
-import { NavLink } from "react-router-dom";
+import s from './Header.module.css'
 
 export const Header=()=>{
 
@@ -16,14 +16,14 @@ export const Header=()=>{
     return (
         <ThemeProvider theme={darkTheme}>
             <AppBar position="static" color="inherit" style={{height:'10vh'}}>
-                <Typography>
-                        <Button variant={'outlined'} color={'inherit'} style={{margin:'17px'}}>Главная</Button>
+                <Typography className={s.typogr}>
+                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Главная</Button>
 
-                        <Button variant={'outlined'} color={'inherit'} style={{margin:'17px'}}>Скилы</Button>
+                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Скилы</Button>
 
-                        <Button variant={'outlined'} color={'inherit'} style={{margin:'17px'}}>Работы</Button>
+                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Работы</Button>
 
-                        <Button variant={'outlined'} color={'inherit'} style={{margin:'17px'}}>Контакты</Button>
+                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Контакты</Button>
                 </Typography>
             </AppBar>
         </ThemeProvider>
