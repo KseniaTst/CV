@@ -1,20 +1,40 @@
 .main {
-    background-color: burlywood;
+    background-color: #11141b;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 30vh;
     width: 100%;
 }
-
-.paper {
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 70%;
-    font-weight: bold;
     align-items: center;
-    width: 70%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container a{
+    color: #dc965a;
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border-radius: 50rem!important;
+    margin-top: 0.5rem!important;
+    box-shadow: none!important;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #dc965a;
+    font-family: "Poppins", sans-serif;
+}
+.main a:hover{
+    background-color: #dc965a;
+    color: #fff;
 }

@@ -1,11 +1,14 @@
 import s from './Contacts.module.css'
 import {Button, Input, Paper} from "@mui/material";
+import {BigHeader} from "../TextHeaders/BigHeader";
+import {LittleHeader} from "../TextHeaders/LittleHeader";
 
 export const Contacts=()=>{
     return (
         <div className={s.main}>
-            <Paper elevation={3} className={s.paper}>
-                <div>Contacts</div>
+            <div className={s.container}>
+                <LittleHeader text={'Get in touch'}/>
+                <BigHeader text={'Contact me'}/>
                 <div >
                     <form className={s.form} >
                         <label>Name:</label>
@@ -16,7 +19,7 @@ export const Contacts=()=>{
                 <div className={s.withWorks}>
                     <Button color={'inherit'} variant={'outlined'}>Send</Button>
                 </div>
-            </Paper>
+            </div>
         </div>
     )
 }

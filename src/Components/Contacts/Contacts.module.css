@@ -1,22 +1,20 @@
 .main {
-    background-color: darkcyan;
-    display: flex;
+    background-color: #0c0f16;
+    display: block;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
     width: 100%;
 }
 
-.paper {
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
-    font-weight: bold;
     align-items: center;
-    width: 70%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .form{
     width: 100%;
