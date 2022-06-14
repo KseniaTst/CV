@@ -1,18 +1,29 @@
-import {Paper} from "@mui/material";
 import s from './Skills.module.css'
-import {OneSkill} from "./OneSkill";
+import {ProgressItem} from "./ProgressItem";
 
 export const Skills = () => {
     return (
         <div className={s.main}>
-            <Paper className={s.paper} elevation={3}>
-                <div >Мои навыки</div>
-                <div className={s.skills}>
-                    <OneSkill name={'React'}/>
-                    <OneSkill name={'Css'}/>
-                    <OneSkill name={'JS'}/>
+            <div className={s.container}>
+                <div className={s.textAbout}>
+                    <div className={s.subTitle}>
+                        <span className={s.three}/>
+                        <span className={s.one}/>
+                        <span className={s.two}/>
+                        <h6> ABOUT ME</h6>
+
+                    </div>
+                    <p className={s.txtBig}>Some text with big letters</p>
+                    <p className={s.txtSmall}>Some text about me with little letters</p>
+                    <p>Download CV</p>
                 </div>
-            </Paper>
+                <div className={s.skills}>
+                    <ProgressItem value={'80%'} skillName={'REACT'}/>
+                    <ProgressItem value={'90%'} skillName={'REDUX'} />
+                    <ProgressItem value={'70%'} skillName={'CSS'}/>
+                    <ProgressItem value={'85%'} skillName={'ENGLISH'}/>
+                </div>
+            </div>
         </div>
     )
 }

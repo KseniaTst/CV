@@ -1,15 +1,21 @@
-import {Button} from "@mui/material";
 import s from './Works.module.css'
 
-export const OneWork=()=>{
+
+type PropsType={
+    icon:JSX.Element
+    projectName:string
+    description:string
+}
+
+export const OneWork=(props:PropsType)=>{
     return(
         <div className={s.oneWork} >
             <div className={s.watch}>
-                <Button variant={'outlined'} color={'inherit'}>Watch</Button>
+                {props.icon}
             </div>
             <div className={s.description}>
-                <p>Project Name</p>
-                <div>Description</div>
+                <p>{props.projectName}</p>
+                <div>{props.description}</div>
             </div>
         </div>
     )
