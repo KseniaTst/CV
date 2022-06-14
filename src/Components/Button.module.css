@@ -1,0 +1,35 @@
+.button {
+    color: #dc965a;
+    padding: 0.8rem 2.6rem;
+    font-size: 17px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    border-radius: 50rem!important;
+    margin-top: 0.5rem!important;
+    box-shadow: none!important;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #dc965a;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4px;
+}
+.button:hover{
+    transition: -0.2s;
+    color: #11141b;
+    border-radius: 50rem;
+    background: #dc965a;
+}
+.button a{
+    border-radius: 50rem;
+}
+.button:active{
+    transition: 0.3s;
+    color:#dc965a ;
+    background:#11141b ;
+
+}

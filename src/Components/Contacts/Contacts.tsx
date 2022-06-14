@@ -1,7 +1,8 @@
 import s from './Contacts.module.css'
-import {Button, Input, Paper} from "@mui/material";
 import {BigHeader} from "../TextHeaders/BigHeader";
 import {LittleHeader} from "../TextHeaders/LittleHeader";
+import {Button} from "@mui/material";
+import {CustomButton} from "../Button";
 
 export const Contacts=()=>{
     return (
@@ -9,15 +10,17 @@ export const Contacts=()=>{
             <div className={s.container}>
                 <LittleHeader text={'Get in touch'}/>
                 <BigHeader text={'Contact me'}/>
-                <div >
+                <div className={s.formContainer } >
                     <form className={s.form} >
-                        <label>Name:</label>
-                        <Input color={'primary'} type="text" name="name"/>
-                        <Input type="submit" value="Save"/>
+                        <div className={s.inputContainer}>
+                            <div className={s.formInputContainer}><input placeholder={'Name'} className={s.formInput}/></div>
+                            <div className={s.formInputContainer}> <input placeholder={'Email'} className={s.formInput}/></div>
+                        </div>
+                        <textarea placeholder={'Message'} />
                     </form>
                 </div>
-                <div className={s.withWorks}>
-                    <Button color={'inherit'} variant={'outlined'}>Send</Button>
+                <div >
+                    <CustomButton text={'Send message'}/>
                 </div>
             </div>
         </div>

@@ -8,6 +8,7 @@
 }
 
 .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,9 +17,71 @@
     margin-left: auto;
     margin-right: auto;
 }
+.formContainer{
+    width: 100%;
+
+ margin-top: 80px;
+}
 .form{
     width: 100%;
     display: flex;
+max-width: 1200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form textarea{
+    height: 144px;
+    width: 100%;
+    max-width: 80%;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: none;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    overflow: auto;
+    resize: vertical;
+    font-size: inherit;
+    line-height: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+textarea:focus{
+    outline: none;
+
+}
+.inputContainer{
+    width: 100%;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+.formInputContainer{
+    min-width: 33.333%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    display: block;
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: fadeInUp;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden !important;
+    -webkit-text-size-adjust: 86%;
+    -webkit-tap-highlight-color: transparent;
+}
+.formInput{
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+
 }
