@@ -7,6 +7,7 @@
     background: #626262;
 
 
+
 }
 .container {
     max-width: 1200px;
@@ -85,8 +86,9 @@
     margin-left: auto;
     max-width: 1200px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     flex-wrap: nowrap;
+    box-sizing: border-box;
 }
 .nav a{
     font-size: 12px;

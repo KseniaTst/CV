@@ -1,8 +1,16 @@
 .main {
+    padding-top: 120px;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     width: 100%;
     border-top: 1px solid black;
+}
+.main p{
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    line-height: 2;
 }
