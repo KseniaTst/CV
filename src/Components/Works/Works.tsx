@@ -1,19 +1,20 @@
 import s from "./Works.module.css";
-import {Paper} from "@mui/material";
 import {OneWork} from "./OneWork";
+import {socialNet, todolist} from "../../assets/icons/icons";
+import {BigHeader} from "../TextHeaders/BigHeader";
+import {LittleHeader} from "../TextHeaders/LittleHeader";
 
 export const Works = () => {
     return (
         <div className={s.main}>
-            <Paper elevation={3} className={s.paper}>
-                <div>
-                    <p>My works</p>
-                </div>
-                <div className={s.withWorks} >
-                    <OneWork/>
-                    <OneWork/>
-                </div>
-            </Paper>
+            <div className={s.heading}>
+                <LittleHeader text={'Portfolio'}/>
+                <BigHeader text={'My works'}/>
+            </div>
+            <div className={s.withWorks}>
+                <OneWork icon={socialNet} projectName={'Social network demo'} description={'vTempore corrupti temporibus fuga earum asperiores fugit laudantium.'}/>
+                <OneWork icon={todolist} projectName={'Todolist demo '} description={'Tempore corrupti temporibus fuga earum asperiores fugit laudantium.'}/>
+            </div>
         </div>
     )
 }

@@ -20,6 +20,7 @@
     margin-right: auto;
     margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
     box-sizing: border-box;
     outline: none;
@@ -31,7 +32,7 @@
     line-height: 1.5;
     font-weight: 400;
     margin-top: 50px;
-    width: 100%;
+    min-width: 50%;
     padding-right: 15px;
     padding-left: 45px;
     margin-right: auto;
@@ -40,13 +41,12 @@
     outline: none;
     list-style: none;
 }
+
 .textAbout{
-    position: relative;
-    width: 100%;
+    /*position: relative;*/
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-    flex: 0 0 50%;
     max-width: 50%;
     box-sizing: border-box;
     outline: none;
@@ -127,4 +127,12 @@
     margin-block-start: 1em;
     margin-block-end: 1em;
     font-family: 'Poppins', sans-serif;
+}
+@media (max-width:449px ) {
+    .skills{
+        width: 100%;
+    }
+    .textAbout{
+        max-width: 100%;
+    }
 }
