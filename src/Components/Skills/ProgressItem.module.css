@@ -30,12 +30,16 @@
     left: 0;
     background-color: #dc965a;
     transition: all 1.5s;
+    -webkit-transition: all 1.5s;
     box-sizing: border-box;
     outline: none;
     list-style: none;
     font-family: 'Barlow Condensed', sans-serif;
     line-height: 1.5;
     font-weight: 400;
+}
+@supports (transition: initial) {
+    /* CSS to use if transitions are supported */
 }
 .progress[title='60%']{ width: 60%}
 .progress[title='90%']{width: 90%}
