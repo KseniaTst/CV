@@ -1,5 +1,7 @@
+@import 'src/SCSS/variables.scss';
+
 .main {
-    background-color: #0c0f16;
+    background-color: $firstBackground;
     display: block;
     justify-content: center;
     align-items: center;

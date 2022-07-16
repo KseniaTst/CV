@@ -1,3 +1,5 @@
+@import 'src/SCSS/variables.scss';
+
 .span {
     visibility: visible;
     --word-total: 1;
@@ -21,7 +23,7 @@
     visibility: visible;
     animation-delay: 0.5s;
     animation-name: fadeIn;
-    color: #dc965a;
+    color: $secondaryColor;
     font-weight: 300;
     font-size: 17px;
     text-transform: uppercase;

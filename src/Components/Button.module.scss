@@ -1,5 +1,7 @@
+@import "src/SCSS/variables.scss";
+
 .button {
-    color: #dc965a;
+    color: $secondaryColor;
     padding: 0.8rem 2.6rem;
     font-size: 17px;
     font-weight: 300;
@@ -14,7 +16,7 @@
     cursor: pointer;
     user-select: none;
     background-color: transparent;
-    border: 1px solid #dc965a;
+    border: 1px solid $secondaryColor;
     font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 4px;
 }
@@ -22,14 +24,14 @@
     transition: -0.2s;
     color: #11141b;
     border-radius: 50rem;
-    background: #dc965a;
+    background: $secondaryColor;
 }
 .button a{
     border-radius: 50rem;
 }
 .button:active{
     transition: 0.3s;
-    color:#dc965a ;
+    color:$secondaryColor ;
     background:#11141b ;
 
 }

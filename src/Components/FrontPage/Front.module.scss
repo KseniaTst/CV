@@ -1,3 +1,5 @@
+@import 'src/SCSS/variables.scss';
+
 .main{
     min-height: 100vh;
     position: relative;
@@ -25,7 +27,7 @@
 .main h6{
     display: flex;
     margin-top: 0;
-    color: #dc965a;
+    color: $secondaryColor;
     font-family: inherit;
     font-size: 14px;
     font-weight: 400;

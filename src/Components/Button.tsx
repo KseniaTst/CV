@@ -1,5 +1,4 @@
-import {Button} from "@mui/material";
-import s from './Button.module.css'
+import s from './Button.module.scss'
 type PropsType={
     text:string
 }

@@ -1,3 +1,5 @@
+@import "src/SCSS/variables.scss";
+
 .main {
     display: flex;
     margin-top: -30px;
@@ -7,7 +9,7 @@
     align-items: center;
     min-height: 100%;
     width: 100%;
-    background-color: #11141b;
+    background-color: $secondBackground;
 }
 .withWorks {
     min-height: 200px;
@@ -48,8 +50,6 @@
 
 }
 .description{
-
-    background-color: #151921;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;

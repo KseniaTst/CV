@@ -1,4 +1,4 @@
-import s from "./Works.module.css";
+import s from "./Works.module.scss";
 import {OneWork} from "./OneWork";
 import {socialNet, todolist} from "../../assets/icons/icons";
 import {BigHeader} from "../TextHeaders/BigHeader";

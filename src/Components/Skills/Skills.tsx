@@ -1,4 +1,4 @@
-import s from './Skills.module.css'
+import s from './Skills.module.scss'
 import {ProgressItem} from "./ProgressItem";
 
 export const Skills = () => {

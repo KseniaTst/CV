@@ -1,4 +1,4 @@
-import s from './icons.module.css'
+import s from './icons.module.scss'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 

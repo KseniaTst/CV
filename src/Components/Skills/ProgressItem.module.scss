@@ -1,3 +1,5 @@
+@import "src/SCSS/variables.scss";
+
 .skillItem{
     margin-bottom: 30px;
     width: 100%;
@@ -28,7 +30,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #dc965a;
+    background-color: $secondaryColor;
     transition: all 1.5s;
     -webkit-transition: all 1.5s;
     box-sizing: border-box;
@@ -54,7 +56,7 @@
     top: -45px;
     padding: 7px 15px;
     border-radius: 5px;
-    background: #dc965a;
+    background: $secondaryColor;
     color: #111;
     font-size: 12px;
     font-weight: 600;
@@ -67,7 +69,7 @@
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 8px solid #dc965a;
+    border-top: 8px solid $secondaryColor;
     position: absolute;
     right: 15px;
     bottom: 14px;

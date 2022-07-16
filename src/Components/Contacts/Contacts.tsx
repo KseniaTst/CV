@@ -1,7 +1,6 @@
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import {BigHeader} from "../TextHeaders/BigHeader";
 import {LittleHeader} from "../TextHeaders/LittleHeader";
-import {Button} from "@mui/material";
 import {CustomButton} from "../Button";
 
 export const Contacts=()=>{

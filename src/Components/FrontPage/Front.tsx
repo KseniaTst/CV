@@ -1,4 +1,4 @@
-import s from './Front.module.css'
+import s from './Front.module.scss'
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';

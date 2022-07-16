@@ -1,4 +1,4 @@
-import s from './ProgressItem.module.css'
+import s from './ProgressItem.module.scss'
 
 type PropsType = {
     value: string
