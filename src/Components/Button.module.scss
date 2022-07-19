@@ -1,10 +1,10 @@
 @import "src/SCSS/variables.scss";
+@import "src/SCSS/mixins";
 
 .button {
-    color: $secondaryColor;
+    @include text(17px,300,$secondaryColor,'Barlow Condensed',1.1);
+
     padding: 0.8rem 2.6rem;
-    font-size: 17px;
-    font-weight: 300;
     transition: all 0.5s ease;
     border-radius: 50rem!important;
     margin-top: 0.5rem!important;
@@ -17,7 +17,6 @@
     user-select: none;
     background-color: transparent;
     border: 1px solid $secondaryColor;
-    font-family: 'Barlow Condensed', sans-serif;
     letter-spacing: 4px;
 }
 .button:hover{
