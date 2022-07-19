@@ -1,4 +1,5 @@
 @import 'src/SCSS/variables.scss';
+@import 'src/SCSS/mixins';
 
 .main{
     min-height: 100vh;
@@ -7,8 +8,32 @@
     /*flex-direction: column;*/
     -webkit-box-align: center;
     background: #626262;
+    & h6{
+        @include text(14px,400,$secondaryColor,inherit,1.4);
 
+        letter-spacing: 5px;
+        display: flex;
+        margin-top: 0;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    & h1{
+        @include text(100px,700,$mainColor,'Cormorant Garamond',1.4);
 
+        margin-bottom: 5px;
+        margin-top: 0;
+        box-sizing: border-box;
+        display: flex;
+    }
+    & h4{
+        @include text(30px,300,$mainColor,inherit, 1);
+
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        box-sizing: border-box;
+        margin: 0;
+    }
 
 }
 .container {
@@ -24,41 +49,7 @@
     display: block;
     flex-wrap: wrap;
 }
-.main h6{
-    display: flex;
-    margin-top: 0;
-    color: $secondaryColor;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 5px;
-    line-height: 1.4;
-}
-.main h1{
-    font-size: 100px;
-    font-weight: 700;
-    font-family: 'Cormorant Garamond', serif;
-    margin-bottom: 5px;
-    margin-top: 0;
-    color: #fff;
-    line-height: 1.4;
-    box-sizing: border-box;
-    display: flex;
 
-}
-.main h4{
-    display: flex;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #fff;
-    font-size: 30px;
-    font-family: inherit;
-    box-sizing: border-box;
-    margin: 0;
-}
 
 .row{
     display: block;
@@ -91,16 +82,15 @@
     justify-content: right;
     flex-wrap: nowrap;
     box-sizing: border-box;
-}
-.nav a{
-    font-size: 12px;
-    font-weight: 500;
-    color: #fff;
-    box-sizing: border-box;
-    padding: 15px 7px;
-    margin: 10px 15px;
-    text-decoration: none;
-    background-color: transparent;
-    line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
+    & a{
+        @include text(12px, 500, $mainColor,'Poppins',1.5 );
+
+        box-sizing: border-box;
+        padding: 15px 7px;
+        margin: 10px 15px;
+        text-decoration: none;
+        background-color: transparent;
+
+
+    }
 }

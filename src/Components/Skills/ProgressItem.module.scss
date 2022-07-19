@@ -1,20 +1,22 @@
 @import "src/SCSS/variables.scss";
+@import "src/SCSS/mixins";
 
 .skillItem{
     margin-bottom: 30px;
     width: 100%;
+    & h6{
+        font-size: 13px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        color: inherit;
+        padding: 0;
+        text-align: left;
+    }
 }
-.skillItem h6{
-    font-size: 13px;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    color: inherit;
-    padding: 0;
-    text-align: left;
-}
+
 .skillProgress{
     text-align: left;
     height: 7px;
@@ -26,6 +28,8 @@
 
 }
 .progress{
+    @include text(1,400,$mainColor,'Barlow Condensed',1.5);
+
     position: absolute;
     height: 100%;
     top: 0;
@@ -36,9 +40,32 @@
     box-sizing: border-box;
     outline: none;
     list-style: none;
-    font-family: 'Barlow Condensed', sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
+    &::after{
+        content: attr(title);
+        position: absolute;
+        right: 10px;
+        top: -45px;
+        padding: 7px 15px;
+        border-radius: 5px;
+        background: $secondaryColor;
+        color: #111;
+        font-size: 12px;
+        font-weight: 600;
+        box-sizing: border-box;
+
+    }
+    &::before{
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid $secondaryColor;
+        position: absolute;
+        right: 15px;
+        bottom: 14px;
+        box-sizing: border-box;
+    }
 }
 @supports (transition: initial) {
     /* CSS to use if transitions are supported */
@@ -49,29 +76,4 @@
 .progress[title='80%']{width: 80%}
 .progress[title='85%'] {width: 85%}
 
-.progress::after{
-    content: attr(title);
-    position: absolute;
-    right: 10px;
-    top: -45px;
-    padding: 7px 15px;
-    border-radius: 5px;
-    background: $secondaryColor;
-    color: #111;
-    font-size: 12px;
-    font-weight: 600;
-    box-sizing: border-box;
 
-}
-.progress::before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 8px solid $secondaryColor;
-    position: absolute;
-    right: 15px;
-    bottom: 14px;
-    box-sizing: border-box;
-}
