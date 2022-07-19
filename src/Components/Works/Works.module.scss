@@ -1,4 +1,5 @@
 @import "src/SCSS/variables.scss";
+@import "src/SCSS/mixins";
 
 .main {
     display: flex;
@@ -20,24 +21,21 @@
     margin-top: -150px;
 }
 .oneWork{
+    @include text(1,400,$mainColor,'Poppins',1.5);
+
     background-color: #151921 ;
     padding: 60px;
     box-sizing: border-box;
-
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
     visibility: visible;
     animation-delay: 0.5s;
     animation-name: fadeInUp;
-    color: #fff;
     min-width: 300px;
     max-width: 300px;
     box-sizing: border-box;
-    line-height: 1.5;
-    font-weight: 400;
     overflow-x: hidden !important;
-    font-family: 'Poppins', sans-serif;
 }
 .watch{
     background-color: #151921;
@@ -65,17 +63,14 @@
         box-sizing: border-box;
     }
     & div{
-        color: #c8c8c8;
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 2;
+        @include text(15px,300,#c8c8c8,'Poppins',2);
+
         overflow: hidden;
         margin: 0;
         visibility: visible;
         animation-delay: 0.5s;
         animation-name: fadeInUp;
         text-align: center;
-        font-family: 'Poppins', sans-serif;
     }
 }
 

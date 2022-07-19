@@ -1,15 +1,12 @@
 @import 'src/SCSS/variables.scss';
-
+@import "src/SCSS/mixins";
 .span {
+    @include text(80px,700,$mainColor,inherit,1.4);
+
     visibility: visible;
     --word-total: 1;
     --char-total: 9;
-    color: $mainColor;
-    line-height: 1.4;
-    font-family: inherit;
     display: inline-block;
-    font-size: 80px;
-    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0 8px rgb(255 255 255 / 5%);
@@ -20,15 +17,14 @@
     }
 }
 .little{
+    @include text(17px,300,$secondaryColor,inherit,1.4);
+
     visibility: visible;
     animation-delay: 0.5s;
     animation-name: fadeIn;
-    color: $secondaryColor;
-    font-weight: 300;
-    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 14px;
     margin-bottom: 5px;
-    line-height: 1.4;
-    font-family: inherit;
+
+
 }
