@@ -1,16 +1,17 @@
+@import 'src/SCSS/variables.scss';
+@import 'src/SCSS/mixins.scss';
+
 .main {
     padding-top: 120px;
-    color: white;
+    color: $mainColor;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10vh;
     width: 100%;
     border-top: 1px solid black;
-}
-.main p{
-    font-size: 13px;
-    color: #999;
-    font-weight: 300;
-    line-height: 2;
+    & p{
+        @include text(13px, 300, #999,inherit , 2);
+
+    }
 }

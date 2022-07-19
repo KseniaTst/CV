@@ -1,4 +1,4 @@
-import s from './Distance.module.css'
+import s from './Distance.module.scss'
 import {CustomButton} from "../Button";
 
 export const Distance = () => {

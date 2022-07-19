@@ -1,19 +1,18 @@
 @import "src/SCSS/variables.scss";
+@import "src/SCSS/mixins";
 
 .main {
     display: flex;
     padding: 120px 0;
-    color: #fff;
+    color: $mainColor;
     background: $firstBackground;
+    & h6{
+        @include text(16px,300,$mainColor,'Barlow Condensed',1.2);
 
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
 
-}
-.main h6{
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
 }
 .container {
     width: 100%;
@@ -54,10 +53,7 @@
     outline: none;
     list-style: none;
     text-align: left;
-    line-height: 1.5;
-    font-weight: 400;
     overflow-x: hidden !important;
-    font-family: 'Poppins', sans-serif;
 }
 .subTitle{
     position: relative;
@@ -71,7 +67,7 @@
     border-radius: 50%;
     background: $secondaryColor;
     position: absolute;
-    bottom: 5px;
+    bottom: 3px;
     left: 2px;
     display: inline-block;
     box-sizing: border-box;
@@ -89,7 +85,7 @@
     background: $secondaryColor;
     position: absolute;
     left: 9px;
-    bottom: 5px;
+    bottom: 3px;
     display: inline-block;
 }
 .three{
@@ -100,35 +96,31 @@
     height: 4px;
     border-radius: 50%;
     left: 9px;
-    top: 6px;
+    top: 4px;
     background: $secondaryColor;
     position: absolute;
     display: inline-block;
 }
 .txtBig{
-    font-weight: 600;
-    line-height: 1.5;
+    @include text(35px,600,$mainColor,'Poppins', 1.5);
+
     display: inline-block;
     box-sizing: border-box;
     outline: none;
     list-style: none;
-    font-size: 35px;
     margin-bottom: 15px;
     margin-top: 0;
 }
 .txtSmall{
+    @include text(15px,300,#c8c8c8,'Poppins',2);
+
     visibility: visible;
     animation-delay: 0.5s;
     animation-name: fadeInUp;
-    color: #c8c8c8;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 2;
     margin: 0;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    font-family: 'Poppins', sans-serif;
 }
 @media (max-width:449px ) {
     .skills{
