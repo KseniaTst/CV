@@ -7,3 +7,15 @@
   font-family: $font-family, sans-serif;
   line-height: $line-height;
 }
+
+@mixin progress($width) {
+  @keyframes progressbar {
+    from {
+      width: 0;
+
+      to {
+        width: $width;
+      }
+    }
+  }
+}
