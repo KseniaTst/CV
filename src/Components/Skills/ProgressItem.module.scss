@@ -27,19 +27,19 @@
     list-style: none;
 
 }
+
 .progress{
     @include text(1,400,$mainColor,'Barlow Condensed',1.5);
-
     position: absolute;
     height: 100%;
     top: 0;
     left: 0;
     background-color: $secondaryColor;
-    transition: all 1.5s;
-    -webkit-transition: all 1.5s;
     box-sizing: border-box;
     outline: none;
     list-style: none;
+    width:0;
+
     &::after{
         content: attr(title);
         position: absolute;
@@ -66,14 +66,10 @@
         bottom: 14px;
         box-sizing: border-box;
     }
-}
-@supports (transition: initial) {
-    /* CSS to use if transitions are supported */
-}
-.progress[title='60%']{ width: 60%}
-.progress[title='90%']{width: 90%}
-.progress[title='70%']{width: 70%}
-.progress[title='80%']{width: 80%}
-.progress[title='85%'] {width: 85%}
 
-
+  //  &[title='60%'] {width: 60%};
+  //&[title='70%'] {width: 70%};
+  //&[title='80%'] {width: 80%};
+  //&[title='85%'] {width: 85%};
+  //&[title='90%'] {width: 90%};
+};
