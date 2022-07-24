@@ -2,35 +2,35 @@
 @import "src/SCSS/mixins";
 
 .button {
-    @include text(17px,300,$secondaryColor,'Barlow Condensed',1.1);
-
-    padding: 0.8rem 2.6rem;
-    transition: all 0.5s ease;
-    border-radius: 50rem!important;
-    margin-top: 0.5rem!important;
-    box-shadow: none!important;
-    display: inline-block;
-    text-align: center;
+    @include text(17px,300,#fff,'Barlow Condensed',1.1);
+position: relative;
+    background: transparent;
+    border: 0;
+    padding: 7px;
     text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid $secondaryColor;
-    letter-spacing: 4px;
-}
-.button:hover{
-    transition: -0.2s;
-    color: #11141b;
-    border-radius: 50rem;
-    background: $secondaryColor;
-}
-.button a{
-    border-radius: 50rem;
-}
-.button:active{
-    transition: 0.3s;
-    color:$secondaryColor ;
-    background:#11141b ;
+    z-index: 3;
+    & a{
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        z-index: 1;
+    }
+    &::after{
+        content: '';
+        width: 45%;
+        height: 100%;
+        background: rgba(220, 150, 90, 0.3);
+        position: absolute;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 0;
+
+    }
+
+    &:hover::after{
+        transition: 0.2s;
+        background: rgba(220, 150, 90, 0.8);
+    }
 
 }
