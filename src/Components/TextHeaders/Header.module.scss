@@ -18,7 +18,6 @@
 }
 .little{
     @include text(17px,300,$secondaryColor,inherit,1.4);
-
     visibility: visible;
     animation-delay: 0.5s;
     animation-name: fadeIn;
