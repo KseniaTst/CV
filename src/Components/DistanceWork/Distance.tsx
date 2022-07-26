@@ -5,7 +5,7 @@ export const Distance = () => {
     return (
         <div className={s.main}>
             <div className={s.container}>
-                <CustomButton text={'Hire me'}/>
+                <CustomButton href={'#front'} text={'Hire me'}/>
             </div>
         </div>
     )
