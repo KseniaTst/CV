@@ -5,7 +5,7 @@ const Fade = require('react-reveal/Fade')
 
 export const Skills = () => {
     return (
-        <div className={s.main}>
+        <div className={s.main} id={'skills'}>
 
             <div className={s.container}>
                 <div className={s.textAbout}>
@@ -16,10 +16,13 @@ export const Skills = () => {
                         <h6> ABOUT ME</h6>
 
                     </div>
-                    <Fade bottom>
+                    <Fade bottom className={s.fade}>
                     <p className={s.txtBig}>Some text with big letters</p>
                     <p className={s.txtSmall}>Some text about me with little letters</p>
-                    <p>Download CV</p>
+                    <a download style={{color:'#dc965a', fontSize:'13px', fontWeight:'300', letterSpacing:'4px', lineHeight:'1.5',
+                    fontFamily:'Poppins, sans serif',textTransform:'uppercase' }}
+                       href={'https://drive.google.com/file/d/1cgv1T9Nuzc0c2CTT_HCxVjGgY6u3yHXh/view?usp=sharing'}>
+                        Download CV</a>
                     </Fade>
                 </div>
                 <div className={s.skills}>

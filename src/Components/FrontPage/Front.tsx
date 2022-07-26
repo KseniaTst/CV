@@ -1,6 +1,6 @@
 import s from './Front.module.scss'
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 
@@ -19,9 +19,9 @@ export const Front = () => {
                     <h1>Ksenia Tst</h1>
                     <h4>FRONTEND DEVELOPER</h4>
                     <div className={s.socialBox}>
-                        <FacebookOutlinedIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/>
-                        <InstagramIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/>
-                        <GitHubIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/>
+                       <a href={'https://t.me/KseniaTst'}> <TelegramIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/></a>
+                       <a href={'https://github.com/KseniaTst'}> <GitHubIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/></a>
+                        <a href={'https://www.linkedin.com/in/ksenia-tsytrikova-993b66240/'}><LinkedInIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px', height:'35px'}}/></a>
                     </div>
                 </div>
             </div>

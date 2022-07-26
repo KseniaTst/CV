@@ -22,9 +22,8 @@
 }
 .oneWork{
     @include text(1,400,$mainColor,'Poppins',1.5);
-
     background-color: #151921 ;
-    padding: 60px;
+    padding: 20px;
     box-sizing: border-box;
     margin-right: 15px;
     margin-left: 15px;
@@ -34,20 +33,34 @@
     animation-name: fadeInUp;
     min-width: 300px;
     max-width: 300px;
-    box-sizing: border-box;
     overflow-x: hidden !important;
+
 }
 .watch{
-    background-color: #151921;
+    //background-color: #151921;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85px;
+    height: 150px;
     box-sizing: border-box;
+    &:hover{
+        .span {
+            opacity: 1;
+            @include text(15px,300,#fff,'Poppins',2);
+        }
+    }
+    & img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
 
+    }
 
 }
-.description{
+.projectName{
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -64,14 +77,12 @@
     }
     & div{
         @include text(15px,300,#c8c8c8,'Poppins',2);
-
         overflow: hidden;
         margin: 0;
-        visibility: visible;
         animation-delay: 0.5s;
-        animation-name: fadeInUp;
         text-align: center;
     }
+
 }
 
 .heading{
