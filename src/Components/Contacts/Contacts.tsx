@@ -18,7 +18,8 @@ export const Contacts=()=>{
     }
 
     return (
-        <motion.div className={s.main} initial='hidden' whileInView='visible' viewport={{amount:0.3, once:true}}>
+        <motion.div id={'contacts'} className={s.main} initial='hidden' whileInView='visible'
+                    viewport={{amount:0.3, once:true}}>
             <div className={s.container}>
                 <LittleHeader text={'Get in touch'}/>
                 <BigHeader text={'Contact me'}/>

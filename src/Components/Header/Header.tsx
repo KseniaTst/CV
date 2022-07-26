@@ -1,31 +1,27 @@
-import {AppBar, Button, createTheme, IconButton, ThemeProvider, Toolbar, Typography} from "@mui/material";
-import s from './Header.module.css'
+import s from './Header.module.scss'
 
 export const Header=()=>{
 
 
-    const darkTheme = createTheme({
-        palette: {
-            mode: 'dark',
-            primary: {
-                main: '#1976d2',
-            },
-        },
-    });
 
     return (
-        <ThemeProvider theme={darkTheme}>
-            <AppBar position="static" color="inherit" style={{height:'10vh'}}>
-                <Typography className={s.typogr}>
-                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Главная</Button>
+        // <ThemeProvider theme={darkTheme}>
+        //     <AppBar position="absolute" color="inherit" style={{height:'10vh'}}>
+        //         <Typography className={s.typogr}>
+        <div className={s.main} id={'navbar'}>
+        <nav className={s.typogr} >
 
-                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Скилы</Button>
+                        <a href={'#front'}>Home</a>
 
-                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Работы</Button>
+                        <a href={'#skills'}>Skills</a>
 
-                        <Button variant={'outlined'} color={'inherit'} className={s.button}>Контакты</Button>
-                </Typography>
-            </AppBar>
-        </ThemeProvider>
+                        <a href={'#works'} >My works</a>
+
+                        <a href={'#contacts'} >Contacts</a>
+        </nav>
+        </div>
+        //         </Typography>
+        //     </AppBar>
+        // </ThemeProvider>
     )
 }
