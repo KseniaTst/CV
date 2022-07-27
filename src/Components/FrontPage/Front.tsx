@@ -16,7 +16,7 @@ export const Front = () => {
             <div className={s.container} >
                 <div className={s.row}>
                     <h6>HELLO, I'M</h6>
-                    <h1>Ksenia Tst</h1>
+                    <h1>Ksenia Tsytrikova</h1>
                     <h4>FRONTEND DEVELOPER</h4>
                     <div className={s.socialBox}>
                        <a href={'https://t.me/KseniaTst'}> <TelegramIcon fontSize={'large'} style={{color: 'white', paddingRight: '15px'}}/></a>

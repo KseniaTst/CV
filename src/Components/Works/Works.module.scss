@@ -74,6 +74,7 @@
         font-weight: 600;
         font-family: inherit;
         box-sizing: border-box;
+        text-decoration: underline;
     }
     & div{
         @include text(15px,300,#c8c8c8,'Poppins',2);
