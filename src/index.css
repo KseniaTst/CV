@@ -14,4 +14,6 @@ code {
 }
 html{
   scroll-behavior: smooth;
+  cursor: default;
+
 }
