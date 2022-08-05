@@ -1,4 +1,4 @@
-import s from './Header.module.scss'
+import s from './TextHeader.module.scss'
 const Fade = require('react-reveal/Fade')
 
 type PropsType={

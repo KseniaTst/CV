@@ -34,5 +34,8 @@ position: relative;
         transition: 0.2s;
         background: rgba(220, 150, 90, 0.8);
     }
+    &:hover{
+        cursor: pointer;
+    }
 
 }
