@@ -24,16 +24,24 @@ export const Contacts=()=>{
                 <LittleHeader text={'Get in touch'}/>
                 <BigHeader text={'Contact me'}/>
                 <div className={s.formContainer}  >
-                    <motion.form className={s.form} variants={formAnimation} >
+                    <motion.form action={'https://usebasin.com/f/bbf86370c756'} method={'POST'} className={s.form} variants={formAnimation} >
                         <div className={s.inputContainer} >
-                            <div className={s.formInputContainer}><input placeholder={'Name'} className={s.formInput}/></div>
-                            <div className={s.formInputContainer}> <input placeholder={'Email'} className={s.formInput}/></div>
+                            <div className={s.formInputContainer}>
+                                <input placeholder={'Name'} name={'name'} className={s.formInput}/>
+                            </div>
+                            <div className={s.formInputContainer}>
+                                <input type={'email'} placeholder={'Email'} name={'email'} className={s.formInput}/>
+                            </div>
                         </div>
-                        <textarea placeholder={'Message'} />
+                        <div className={s.textareaContainer}>
+                        <textarea placeholder={'Message'} name={'user-text'}/>
+                        </div>
+                        <div >
+                            <CustomButton type={'submit'} text={'Send message'}/>
+                        </div>
                     </motion.form>
-                </div>
-                <div >
-                    <CustomButton text={'Send message'}/>
+
+
                 </div>
             </div>
         </motion.div>

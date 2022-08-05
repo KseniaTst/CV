@@ -2,7 +2,7 @@
 
 .main {
     background-color: $firstBackground;
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
@@ -43,7 +43,7 @@ max-width: 1200px;
     align-items: center;
     & textarea{
         height: 144px;
-        width: 100%;
+        width: 65%;
         max-width: 80%;
         padding: 15px 0;
         margin-bottom: 30px;
@@ -56,7 +56,7 @@ max-width: 1200px;
         resize: vertical;
         font-size: inherit;
         line-height: inherit;
-        -webkit-tap-highlight-color: transparent;
+
         &:focus{
             outline: none;
 
@@ -65,7 +65,7 @@ max-width: 1200px;
 }
 
 
-.inputContainer{
+.inputContainer , .textareaContainer{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -87,7 +87,7 @@ max-width: 1200px;
     -webkit-tap-highlight-color: transparent;
 }
 .formInput{
-    width: 100%;
+    width: 85%;
     padding: 15px 0;
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);

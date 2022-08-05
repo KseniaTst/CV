@@ -2,11 +2,12 @@ import s from './Front.module.scss'
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import MyPh from '../../assets/images/1659277940157_20220731_171542_mr1659277939593_mh1659277980413.jpg'
 
 export const Front = () => {
     return (
         <div className={s.main} id={'front'}>
+            <img src={MyPh}/>
             <nav className={s.nav}>
                 <a href={'#front'}>Home</a>
                 <a href={'#skills'}>Skills</a>

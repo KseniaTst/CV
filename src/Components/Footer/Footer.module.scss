@@ -9,7 +9,7 @@
     align-items: center;
     height: 10vh;
     width: 100%;
-    border-top: 1px solid black;
+
     & p{
         @include text(13px, 300, #999,inherit , 2);
 
