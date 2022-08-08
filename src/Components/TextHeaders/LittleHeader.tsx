@@ -1,4 +1,4 @@
-import s from './Header.module.scss'
+import s from './TextHeader.module.scss'
 const Reveal = require('react-reveal/Reveal')
 
 type PropsType={
