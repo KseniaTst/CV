@@ -25,7 +25,7 @@ export const Skills = () => {
                         fontWeight:'300', letterSpacing:'4px', lineHeight:'1.5',
                     fontFamily:'Poppins, sans serif',textTransform:'uppercase' }}
                        href={'https://drive.google.com/file/d/1giceClpAl1Z5WQ4pr1hhOjAh_voTbiL6/view?usp=sharing'}>
-                        Download CV</motion.a>
+                        Download CV </motion.a>
                     </Fade>
                 </div>
                 <div className={s.skills}>
