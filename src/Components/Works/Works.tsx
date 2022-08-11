@@ -35,7 +35,7 @@ export const Works = () => {
                                  'Todolist app created with react hooks, routing\n' +
                                  'and redirects, material UI, REST api\n' +
                                  'request/response flow, unit-tests and etc.'}
-                    address={'https://KseniaTst.github.io/Todolist'}/>
+                    address={'https://todolist-demo-version.herokuapp.com/'}/>
                 </Slide>
             </div>
         </div>
