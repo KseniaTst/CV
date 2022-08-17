@@ -36,6 +36,10 @@ export const Works = () => {
                                  'and redirects, material UI, REST api\n' +
                                  'request/response flow, unit-tests and etc.'}
                     address={'https://KseniaTst.github.io/Todolist/'}/>
+                    <OneWork icon={todolist} projectName={'Shop Pizza demo'} description={'Shop pizza demo project. Created with Typescript, React, Redux,' +
+                        'Redux Thunk, Router-dom, Axios, SCSS.'} title={'pizza'}
+                             address={'https://pizza-demo-project.herokuapp.com/'}
+                             imgAddress={'https://i.imgur.com/vqrBuPT.jpg'}/>
                 </Slide>
             </div>
         </div>
