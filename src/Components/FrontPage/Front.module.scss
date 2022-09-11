@@ -33,13 +33,16 @@
     & .imgFrame{
         align-self: flex-end;
         position: absolute;
-        height: 575px;
+        height: 76%;
         width: 150px;
         z-index: 0;
         opacity: 0.7;
         background-color: $secondaryColor;
         margin-top: 7.5%;
         margin-right: 18.5%;
+        @media (max-width: 890px) {
+            height: 30%;
+        }
     }
     & h6{
         @include text(14px,400,$secondaryColor,inherit,1.4);

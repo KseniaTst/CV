@@ -4,6 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import MyPh from '../../assets/images/myPhoto.jpg'
 import {MouseParallaxContainer, MouseParallaxChild} from "react-parallax-mouse";
+import Typewriter from 'typewriter-effect';
 
 export const Front = () => {
 
@@ -25,7 +26,13 @@ export const Front = () => {
                     <div className={s.row}>
                         <h6>HELLO, I'M</h6>
                         <h1>Ksenia Tsytrikova</h1>
-                        <h4>FRONTEND DEVELOPER</h4>
+                        <h4>
+                            <Typewriter options={{
+                                strings: ['FRONTEND DEVELOPER'],
+                                autoStart: true,
+                                loop:true,
+                            }}/>
+                        </h4>
                         <div className={s.socialBox}>
                             <a href={'https://t.me/KseniaTst'}> <TelegramIcon fontSize={'large'} style={{
                                 color: 'white',
