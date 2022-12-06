@@ -38,7 +38,7 @@ export const Works = () => {
                     address={'https://KseniaTst.github.io/Todolist/'}/>
                     <OneWork icon={todolist} projectName={'Shop Pizza demo'} description={'Shop pizza demo project. Created with Typescript, React, Redux,' +
                         'Redux Thunk, Router-dom, Axios, SCSS.'} title={'pizza'}
-                             address={'https://pizza-demo-project.herokuapp.com/'}
+                             address={'https://shop-pizza-demo-bu9k.vercel.app/front'}
                              imgAddress={'https://i.imgur.com/vqrBuPT.jpg'}/>
                 </Slide>
             </div>
