@@ -76,7 +76,7 @@
 
     & h4{
         @include text(30px,300,$mainColor,inherit, 1.2);
-
+        height: 72px;
         display: flex;
         text-transform: uppercase;
         letter-spacing: 4px;
