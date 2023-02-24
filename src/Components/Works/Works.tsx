@@ -40,7 +40,8 @@ export const Works = () => {
                         'Redux Thunk, Router-dom, Axios, SCSS.'} title={'pizza'}
                              address={'https://shop-pizza-demo-bu9k.vercel.app/front'}
                              imgAddress={'https://i.imgur.com/vqrBuPT.jpg'}/>
-                    <OneWork icon={todolist} projectName={'Learning cards'} description={'Learning cards project. Created with Typescript, React, Redux,' +
+                    <OneWork icon={todolist} projectName={'Learning cards'} description={'Learning cards project. Created '+
+                        'in command of 3 developers using Typescript, React, Redux,' +
                         'Redux Thunk, React-Router-domv6, Axios, Formik, Material UI, Git, Github.'} title={'cards'}
                              address={'https://card-project-hazel.vercel.app/'}
                              imgAddress={'https://cdn.hundred.org/uploads/innovation/cover_image/1555/wide_Cards_w_Words.jpg'}/>
