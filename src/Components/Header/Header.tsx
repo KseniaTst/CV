@@ -2,8 +2,6 @@ import s from './Header.module.scss'
 
 export const Header=()=>{
 
-
-
     return (
         // <ThemeProvider theme={darkTheme}>
         //     <AppBar position="absolute" color="inherit" style={{height:'10vh'}}>

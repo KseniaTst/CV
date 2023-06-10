@@ -44,7 +44,6 @@
 }
 
 .textAbout{
-    /*position: relative;*/
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
@@ -54,6 +53,9 @@
     list-style: none;
     text-align: left;
     overflow-x: hidden !important;
+     & a:hover {
+         text-decoration: none;
+     }
 }
 .subTitle{
     position: relative;

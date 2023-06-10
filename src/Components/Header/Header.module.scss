@@ -28,9 +28,6 @@
   flex-wrap: nowrap;
   box-sizing: border-box;
 
-  //top:0;
-  //position: sticky;
-
   & a {
     @include text(12px, 500, $mainColor, 'Poppins', 1.5);
 
@@ -40,5 +37,9 @@
     text-decoration: none;
     background-color: transparent;
     transition: 3s ease;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
 }
