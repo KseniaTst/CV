@@ -12,7 +12,7 @@ export const Front = () => {
         <div className={s.main} id={'front'}>
             <MouseParallaxContainer className={s.main}>
                 <MouseParallaxChild factorX={0.03} factorY={0.05} className={s.imgContainer}>
-                    <img src={MyPh}/>
+                    <img src={MyPh} alt={''}/>
                 </MouseParallaxChild>
                 <MouseParallaxChild factorX={0.03} factorY={0.05} className={s.imgFrame}/>
 

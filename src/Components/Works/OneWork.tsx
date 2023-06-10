@@ -20,7 +20,7 @@ window.open(props.address, '_blank')
     return (
         <div className={s.oneWork} >
             <motion.div className={s.watch} id={props.title} onClick={onClickHandler} >
-                <motion.img  src={props.imgAddress} whileHover={{scale:1.1, opacity:0.4}}/>
+                <motion.img  src={props.imgAddress} whileHover={{scale:1.1, opacity:0.4}} alt={''}/>
                 <motion.span className={s.span} >click to watch</motion.span>
                 {/*{props.icon}*/}
             </motion.div>
