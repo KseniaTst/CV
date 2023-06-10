@@ -3,7 +3,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Typewriter from 'typewriter-effect'
-import MyPh from '../../assets/images/myPhoto.jpg'
+import MyPh from '../../assets/images/myPhoto-min.jpg'
 import {MouseParallaxContainer, MouseParallaxChild} from "react-parallax-mouse";
 
 export const Front = () => {
